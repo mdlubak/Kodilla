@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Empikej</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> 
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</head>
+<body>
+
+
+<div class="container">
+	<nav class="navbar navbar-inverse"> 
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">empikej</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">BLOG</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#" >
+						<span class="glyphicon glyphicon-user"></span> 
+						Sign Up
+					</a>
+				</li>
+				<li>
+					<a href="#" data-toggle="modal" data-target="#login-modal">
+						<span class="glyphicon glyphicon-log-in"></span> 
+						Login
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+	<!--Modal login start-->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="hidden">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6">
+				<div class="form-login">
+					<h4>Welcome back</h4>
+					<input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" />
+					</br>
+					<input type="text" id="userPassword" class="form-control input-sm chat-input" placeholder="password" />
+					</br>
+					<div class="wrapper">
+						<span class="group-btn">     
+							<a href="#" class="btn btn-primary btn-md">
+								Login 
+								<i class="fa fa-sign-in"></i>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Modal login end-->
+
+<div class="hero container">
+	<img src="http://i67.tinypic.com/2dgrpxi.jpg" class="img-responsive">
+</div>
+
+<div class="about container gap">
+	<div class="row">
+		<div id="myCarousel" class="carousel slide col-md-6 hidden-xs" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active example-1">
+					<img src="https://unsplash.it/600/300" alt="photo" class="img-responsive">
+				</div>
+				<div class="item example-2">
+					<img src="https://unsplash.it/600/300?random" alt="photo" class="img-responsive">
+				</div>
+				<div class="item example-3">
+					<img src="https://unsplash.it/600/300" alt="photo" class="img-responsive">    
+				</div>
+				<div class="item example-4">
+					<img src="https://unsplash.it/600/300?random" alt="photo" class="img-responsive">
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
+				</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			</a>
+		</div>
+		<div class="col-md-6 col-xs-12">
+			<h2>Our story</h2>
+			<p>
+				Sed blandit, mi vel sagittis sodales, lorem massa iaculis nibh, at consequat mauris lectus et ligula. Fusce et iaculis neque. Nunc euismod ut augue a consectetur. Quisque elementum turpis ligula, sit amet faucibus nunc malesuada at.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus vehicula lacus, pretium rutrum lorem gravida sit amet. Aliquam erat volutpat. In ultricies rhoncus ipsum eget sodales. Sed fermentum dictum nunc. Maecenas id varius purus. In sem nunc, aliquet eleifend turpis dignissim, ultrices consequat felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senec metus suscipit urna, vel placerat nisi turpis vitae mi. Maecenas pulvinar metus at mi pellentesque male suada.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="info container gap">
+	<ul class="nav nav-tabs">
+		<li>
+			<a data-toggle="tab" href="#concerts">
+				Concerts
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tab" href="#videos">
+				Videos
+			</a>
+		</li>
+		<li>
+			<a data-toggle="tab" href="#tracks">
+				Tracks
+			</a>
+		</li>
+	</ul>
+	<div class="tab-content">	
+		<div id="concerts" class="tab-pane fade in active container">
+			<h3>Concerts</h3>
+			<div class="table-responsive col-md-7">
+				<table class="table table-inverse">
+					<thead>
+						<tr>
+							<th>Date</th>
+							<th>City</th>
+							<th>Venue</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>16.12.16</td>
+							<td>Killarney</td>
+							<td>Curious Cat</td>
+						</tr>
+						<tr>
+							<td>23.01.17</td>
+							<td>Cork</td>
+							<td>Rock Club</td>
+						</tr>
+						<tr>
+							<td>02.04.17</td>
+							<td>Killarney</td>
+							<td>Courtney's Bar</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div id="videos" class="tab-pane fade container gap"> 
+			<h3>Videos</h3> 
+			<iframe src="https://www.youtube.com/embed/LVsMBc6M-OM" frameborder="0" allowfullscreen>
+			</iframe>
+			<iframe src="https://www.youtube.com/embed/ccQV6SYkbHM" frameborder="0" allowfullscreen>
+			</iframe>
+		</div> 
+		<div id="tracks" class="tab-pane fade container"> 
+			<h3>Tracks</h3> 
+			<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/27986368&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
+			</iframe>
+			<iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/27986368&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
+			</iframe>
+		</div> 
+	</div>
+</div>
+
+<div class="contact container gap">
+	<div class="row container">
+		<div class="col-md-2 col-sm-6">
+			<h4>Address</h4>
+			<p>Cork Road 12
+				<br>Killarney
+				<br>co. Kerry
+				<br>Ireland
+			</p>
+		</div>
+		<div class="col-md-2 col-sm-6">
+			<h4>Phone</h4>
+			<p>+353 87 111 111</p>
+			<h4>Email</h4>
+			<p>empikej@example.com</p>
+		</div>
+		<div class="col-md-4 col-sm-6">
+			<h4>Visit us</h4>
+			<button type="button" class="btn btn-fb social">
+				<i class="fa fa-facebook"></i>
+			</button>
+			<button type="button" class="btn btn-tw social">
+				<i class="fa fa-twitter"></i>
+			</button>
+			<button type="button" class="btn btn-yt social">
+				<i class="fa fa-youtube"></i>
+			</button>
+		</div>
+		<form class="col-md-4 col-sm-6 col-xs-6">
+			<h4>Sign up for Newsletter</h4>
+			<div class="form-group">
+				<label for="email">Email address:</label>
+				<input type="email" class="form-control" id="email"><br>
+				<button type="submit" class="btn btn-sm btn-default news">Submit</button>
+			</div>
+		</form>
+	</div>
+</div>	
+
+
+
+
+
+
